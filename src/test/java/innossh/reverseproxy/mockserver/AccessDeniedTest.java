@@ -42,8 +42,8 @@ public class AccessDeniedTest {
                 .get()
                 .build();
         Response response = client.newCall(request).execute();
-        assertEquals(204, response.code());
 
+        assertEquals(204, response.code());
         clients.getBackend1().verify(
                 request()
                         .withMethod("GET")
@@ -71,8 +71,8 @@ public class AccessDeniedTest {
                 .get()
                 .build();
         Response response = client.newCall(request).execute();
-        assertEquals(204, response.code());
 
+        assertEquals(204, response.code());
         clients.getBackend2().verify(
                 request()
                         .withMethod("GET")
@@ -105,8 +105,8 @@ public class AccessDeniedTest {
                 .get()
                 .build();
         Response response = client.newCall(request).execute();
-        assertEquals(expectedStatus, response.code());
 
+        assertEquals(expectedStatus, response.code());
         clients.getBackend2().verify(
                 request()
                         .withMethod("GET")
