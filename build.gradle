@@ -1,0 +1,18 @@
+group 'innossh.reverseproxy.mockserver'
+version '1.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'pl.pragmatists', name: 'JUnitParams', version: '1.1.0'
+    testCompile group: 'org.mock-server', name: 'mockserver-netty', version: '3.10.8'
+    testCompile group: 'org.mock-server', name: 'mockserver-client-java', version: '3.10.8'
+    testCompile group: 'com.squareup.okhttp3', name: 'okhttp', version: '3.8.1'
+}
